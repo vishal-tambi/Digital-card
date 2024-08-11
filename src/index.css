@@ -11,3 +11,123 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* style.css */
+/* style.css */
+
+/* style.css */
+#root {
+  width: 70%; /* Adjust width to be a percentage of the viewport */
+  max-width: 300px; /* Set a maximum width */
+  padding: 20px; /* Padding inside the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 3.1); /* Shadow for depth */
+  background-color: #fff; /* Card background color */
+  text-align: center; /* Center align text */
+  margin: 20px auto; /* Center the card horizontally with margin */
+}
+
+#root-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Optional: centers the text within h1 */
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content; /* Ensures the content width is just enough to fit the image and text */
+}
+
+.info img {
+  width: 100%; /* Adjust as necessary */
+  border-radius: 10px;
+}
+
+/* style.css */
+.container {
+  display: flex;
+  justify-content: space-between; /* Space between the boxes */
+  width: 20vw; /* Adjust the width as needed */
+}
+
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Each box takes up equal space */
+  margin: 10px; /* Space around the boxes */
+  padding: 8px;
+  background-color: white;
+  text-align: center; /* Center the text inside each box */
+  border: 1px solid black; /* Optional: add a border to the boxes */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1); /* Shadow for depth */
+
+}
+
+.box2{
+  background-color: rgb(8, 8, 153);
+}
+/* style.css */
+.Footer-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 15px; /* Space between icons */
+  margin: 20px 0; /* Space above and below the icons */
+}
+
+.icon {
+  font-size: 40px !important; /* Adjust the size of the icons */
+  color: #000; /* Default color for the icons */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.icon:hover {
+  color: #1da1f2; /* Change color on hover (example: Twitter blue) */
+}
+
+/* Optionally, add specific colors for each icon */
+.icon.twitter {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.icon.facebook {
+  color: #1877f2; /* Facebook blue */
+}
+
+.icon.instagram {
+  color: #c13584; /* Instagram purple */
+}
+
+.icon.github {
+  color: #333; /* GitHub gray */
+}
+
+
+@media (max-width: 600px) {
+  .card {
+      width: 95%; /* Increase width on smaller screens */
+      padding: 15px; /* Adjust padding */
+  }
+
+  .Footer-icons {
+      flex-direction: column; /* Stack icons vertically on small screens */
+      gap: 10px; /* Reduce space between icons */
+      display: flex;
+      justify-content: center;
+  }
+
+  .container {
+      font-size: 0.7rem; /* Adjust font size for smaller screens */
+      display: flex;
+      justify-content: center; /* Space between the boxes */
+  }
+}
